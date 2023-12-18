@@ -17,4 +17,6 @@ if (age && age > 0) {
     }
 
     console.log(age + " " + year)
-} 
+} else {
+    console.log("Введіть вік більше 0.")
+}
