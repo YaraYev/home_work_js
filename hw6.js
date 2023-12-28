@@ -32,7 +32,7 @@ function checkProbabilityTheory(count) {
     let countNotPair = 0
 
     for (let i = 0; i < count; i++) {
-        let rnd = Math.round(Math.random() * 900) + 100
+        let rnd = Math.floor(Math.random() * 901) + 100;
 
         if (rnd % 2 === 0) {
             countPair++
