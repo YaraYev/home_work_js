@@ -28,7 +28,7 @@ let services = {
         let sum = 0
         for (let i in this) {
             if (typeof this[i] !== "function") {
-                let b = Number.parseInt(this[i])
+                let b = Number.parseFloat(this[i])
                 sum += b
             }
         }
@@ -38,7 +38,7 @@ let services = {
         let minValue
         for (let i in this) {
             if (typeof this[i] !== "function") {
-                let b = Number.parseInt(this[i])
+                let b = Number.parseFloat(this[i])
                 if (minValue === undefined || minValue > b) {
                     minValue = b
                 }
@@ -50,7 +50,7 @@ let services = {
         let maxValue
         for (let i in this) {
             if (typeof this[i] !== "function") {
-                let b = Number.parseInt(this[i])
+                let b = Number.parseFloat(this[i])
                 if (maxValue === undefined || maxValue < b) {
                     maxValue = b
                 }
@@ -61,6 +61,10 @@ let services = {
 }
 
 services["breakingGlass"] = "200 UAH"
+
+services["coffee"] = "20.50 UAH"
+
+services["tea"] = "15.68 UAH"
 
 console.log("Total cost of provided services:", services.price(), "UAH")
 console.log("Minimal price in service:", services.minPrice(), "UAH")
