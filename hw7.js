@@ -62,7 +62,7 @@ let services = {
 
 services["breakingGlass"] = "200 UAH"
 
-console.log("Total cost of provided services:", services.price())
-console.log("Minimal price in service:", services.minPrice())
-console.log("Max price in service:", services.maxPrice())
+console.log("Total cost of provided services:", services.price(), "UAH")
+console.log("Minimal price in service:", services.minPrice(), "UAH")
+console.log("Max price in service:", services.maxPrice(), "UAH")
 
