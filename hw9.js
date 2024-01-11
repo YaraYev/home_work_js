@@ -27,7 +27,10 @@ function checker(item) {
     return check
 }
 
-let newArr = arr.filter(checker)
+let newArr = arr.filter(checker).map(function (item) {
+    return item.email
+})
+
 
 console.log(newArr)
 
